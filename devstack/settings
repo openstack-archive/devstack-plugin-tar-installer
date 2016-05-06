@@ -1,0 +1,31 @@
+# Copyright (c) 2016 Virtual Open Systems, SAS.
+#
+# Michele Paolino <m.paolino@virtualopensystems.com>
+# Virtual Open Systems devstack plugin for installing qemu and libvirt
+# from tar releases - settings file
+
+enable_service devstack-tar-installer-plugin
+
+# libvirt and QEMU/KVM installation from sources
+#
+# when the variables QEMU_VERSION, LIBVIRT_VERSION, or both are specified
+# (e.g. in the local.conf file), we download the sources from the official
+# websites and install libvirt/QEMU binaries
+#
+# Custom versions of the libvirt/QEMU sources can be made available at a
+# different URL using the variables LIBVIRT_URL_BASE and QEMU_URL_BASE.
+
+QEMU_VERSION=2.6.0-rc1
+LIBVIRT_VERSION=1.2.9
+
+# libvirt and QEMU installation from sources
+#
+# when the variables QEMU_VERSION, LIBVIRT_VERSION, or both are specified
+# (e.g. in the local.conf file), we download the sources from the official
+# websites and install libvirt/QEMU binaries
+#
+# Custom versions of the libvirt/QEMU sources can be made available at a
+# different URL using the variables LIBVIRT_URL_BASE and QEMU_URL_BASE.
+
+#LIBVIRT_URL_BASE="http://www.virtualopensystems.com/sources/"    # the archive must be .tar.gz
+#QEMU_URL_BASE="http://www.virtualopensystems.com/sources/"       # the archive must be .tar.bz2
